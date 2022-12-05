@@ -19,6 +19,8 @@ if(isset($_SESSION['USER_ID'])){
             $_SESSION['USER_F_NAME']=$row['firstname'];
             $_SESSION['USER_NAME']=$row['lastname'];
             $_SESSION['EMAIL']=$row['email'];
+            $_SESSION['PHONE']=$row['phonenumber'];
+            $_SESSION['PASSWORD']=$row['password'];
             header("location:index.php");
         } else {
             $msg = "Something is Wrong";
